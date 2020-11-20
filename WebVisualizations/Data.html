@@ -12,23 +12,34 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="navbar">
-        <a href="index.html">Latitude</a>
-        <a href="Data.html">Data</a>
-        <a href="Comparison.html">Comparison</a>
-        <div class = "dropdown">
-            <button class="dropbtn">Plots
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Max Temperature</a>
-                <a href="#">Humidity</a>
-                <a href="#">Cloudiness</a>
-                <a href="#">Wind Speed</a>
-            </div>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkcyan;">
+    <a class="navbar-brand navbar-dark" style="color: white;" href="index.html"><strong>Latitude</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link navbar-dark" style="color: white;" href="Data.html">Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-dark" style="color: white;" href="Comparison.html">Chart Comparison</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle navbar-dark" style="color: white;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item navbar-dark" style="color: darkcyan;" href="#">Max Temperature</a>
+            <a class="dropdown-item navbar-dark" style="color: darkcyan;" href="#"> Humidity</a>
+            <a class="dropdown-item navbar-dark" style="color: darkcyan;" href="#">Wind Speed</a>
+            <a class="dropdown-item navbar-dark" style="color: darkcyan;" href="#">Cloudiness</a>
+          </div>
+        </li>
+      </ul>
     </div>
+  </nav>
     <div class="row-content">
         <div class="col-sm-12 col-md-12">
             <h2 class="text-left">
